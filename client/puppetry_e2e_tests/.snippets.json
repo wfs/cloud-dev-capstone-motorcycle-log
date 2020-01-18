@@ -1,0 +1,290 @@
+{
+  "title": null,
+  "timeout": 50000,
+  "snippets": true,
+  "description": null,
+  "savedAt": 1579383601,
+  "loadedAt": 1579383432,
+  "modified": false,
+  "filename": ".snippets.json",
+  "targets": {
+    "a8vk5j8p4p3": {
+      "editing": false,
+      "id": "a8vk5j8p4p3",
+      "key": "a8vk5j8p4p3",
+      "target": "BUTTON_CLASS_UI_OLIVE_HUGE_BUTTON",
+      "selector": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/button[1]",
+      "disabled": false,
+      "adding": false,
+      "parentType": "",
+      "ref": ""
+    },
+    "a8vk5j8ppe7": {
+      "editing": false,
+      "id": "a8vk5j8ppe7",
+      "key": "a8vk5j8ppe7",
+      "target": "INPUT_ID_1_EMAIL",
+      "selector": "#\\31 -email",
+      "disabled": false,
+      "adding": false,
+      "parentType": "",
+      "ref": ""
+    },
+    "a8vk5j8pzla": {
+      "editing": false,
+      "id": "a8vk5j8pzla",
+      "key": "a8vk5j8pzla",
+      "target": "INPUT_NAME_PASSWORD",
+      "selector": "INPUT[name=\"password\"]",
+      "disabled": false,
+      "adding": false,
+      "parentType": "",
+      "ref": ""
+    },
+    "a8vk5j8q9a4": {
+      "editing": false,
+      "id": "a8vk5j8q9a4",
+      "key": "a8vk5j8q9a4",
+      "target": "DIV",
+      "selector": "/html[1]/body[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/div[2]/div[2]/span[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]",
+      "disabled": false,
+      "adding": false,
+      "parentType": "",
+      "ref": ""
+    },
+    "a8vk5j8qivg": {
+      "editing": false,
+      "id": "a8vk5j8qivg",
+      "key": "a8vk5j8qivg",
+      "target": "SPAN_CLASS_AUTH0_LABEL_SUBMIT",
+      "selector": "/html[1]/body[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/button[1]/span[1]",
+      "disabled": false,
+      "adding": false,
+      "parentType": "",
+      "ref": ""
+    }
+  },
+  "groups": {
+    "snippets": {
+      "editing": false,
+      "id": "snippets",
+      "key": "snippets",
+      "title": "Snippets",
+      "tests": {
+        "a8vk5j8m7qc": {
+          "title": "Login",
+          "id": "a8vk5j8m7qc",
+          "editing": false,
+          "groupId": "snippets",
+          "key": "a8vk5j8m7qc",
+          "commands": {
+            "a8vk5j8ocmo": {
+              "editing": false,
+              "id": "a8vk5j8ocmo",
+              "key": "a8vk5j8ocmo",
+              "target": "page",
+              "method": "goto",
+              "params": {
+                "url": "{{ BASE_URL }}",
+                "timeout": 30000,
+                "waitUntil": "domcontentloaded"
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "snippets",
+              "testId": "a8vk5j8m7qc",
+              "entity": "command",
+              "waitForTarget": false
+            },
+            "a8vk5j8osyl": {
+              "editing": false,
+              "id": "a8vk5j8osyl",
+              "key": "a8vk5j8osyl",
+              "target": "page",
+              "method": "setViewport",
+              "assert": {},
+              "params": {
+                "height": 675,
+                "width": 1366
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "snippets",
+              "testId": "a8vk5j8m7qc",
+              "waitForTarget": false,
+              "entity": "command"
+            },
+            "a8vk5j8p4n1": {
+              "editing": false,
+              "id": "a8vk5j8p4n1",
+              "key": "a8vk5j8p4n1",
+              "target": "BUTTON_CLASS_UI_OLIVE_HUGE_BUTTON",
+              "method": "click",
+              "assert": {},
+              "params": {
+                "button": "left"
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "snippets",
+              "testId": "a8vk5j8m7qc",
+              "waitForTarget": true,
+              "entity": "command"
+            },
+            "a8vk5j8pf8l": {
+              "editing": false,
+              "id": "a8vk5j8pf8l",
+              "key": "a8vk5j8pf8l",
+              "target": "page",
+              "method": "waitForNavigation",
+              "assert": {},
+              "params": {
+                "timeout": 3000,
+                "waitUntil": "domcontentloaded"
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "snippets",
+              "testId": "a8vk5j8m7qc",
+              "waitForTarget": false,
+              "entity": "command"
+            },
+            "a8vk5j8ppcd": {
+              "editing": false,
+              "id": "a8vk5j8ppcd",
+              "key": "a8vk5j8ppcd",
+              "target": "INPUT_ID_1_EMAIL",
+              "method": "type",
+              "params": {
+                "value": "{{ TEST_USER_EMAIL }}"
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "snippets",
+              "testId": "a8vk5j8m7qc",
+              "waitForTarget": true,
+              "entity": "command"
+            },
+            "a8vk5j8pzj9": {
+              "editing": false,
+              "id": "a8vk5j8pzj9",
+              "key": "a8vk5j8pzj9",
+              "target": "INPUT_NAME_PASSWORD",
+              "method": "type",
+              "params": {
+                "value": "{{ TEST_PASSWORD }}"
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "snippets",
+              "testId": "a8vk5j8m7qc",
+              "waitForTarget": true,
+              "entity": "command"
+            },
+            "a8vk5j8q97x": {
+              "editing": false,
+              "id": "a8vk5j8q97x",
+              "key": "a8vk5j8q97x",
+              "target": "DIV",
+              "method": "click",
+              "assert": {},
+              "params": {
+                "button": "left"
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "snippets",
+              "testId": "a8vk5j8m7qc",
+              "waitForTarget": true,
+              "entity": "command"
+            },
+            "a8vk5j8qist": {
+              "editing": false,
+              "id": "a8vk5j8qist",
+              "key": "a8vk5j8qist",
+              "target": "SPAN_CLASS_AUTH0_LABEL_SUBMIT",
+              "method": "click",
+              "assert": {},
+              "params": {
+                "button": "left"
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "snippets",
+              "testId": "a8vk5j8m7qc",
+              "waitForTarget": true,
+              "entity": "command"
+            },
+            "a8vk5j8qsyt": {
+              "editing": false,
+              "id": "a8vk5j8qsyt",
+              "key": "a8vk5j8qsyt",
+              "target": "page",
+              "method": "waitForNavigation",
+              "assert": {},
+              "params": {
+                "timeout": 3000,
+                "waitUntil": "domcontentloaded"
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "snippets",
+              "testId": "a8vk5j8m7qc",
+              "waitForTarget": false,
+              "entity": "command"
+            }
+          }
+        }
+      },
+      "disabled": false,
+      "expanded": false,
+      "adding": false
+    }
+  },
+  "puppetry": "3.1.1"
+}

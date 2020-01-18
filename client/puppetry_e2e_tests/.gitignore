@@ -1,0 +1,8 @@
+# dependencies
+/node_modules
+/lib
+/allure-results
+/screenshots
+/snapshots
+/exported_puppetry_tests
+

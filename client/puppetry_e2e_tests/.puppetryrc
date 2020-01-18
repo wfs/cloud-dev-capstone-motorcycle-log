@@ -1,0 +1,175 @@
+{
+  "name": "puppetry_e2e_tests",
+  "appPanels": {
+    "suite": {
+      "panes": [
+        "groups"
+      ]
+    },
+    "settings": {
+      "panes": []
+    }
+  },
+  "groups": {
+    "snippets": {
+      "key": "snippets",
+      "value": true,
+      "tests": {
+        "a8vk5j8m7qc": {
+          "key": "a8vk5j8m7qc",
+          "value": true
+        }
+      }
+    },
+    "a8vk5j5192g": {
+      "key": "a8vk5j5192g",
+      "value": true,
+      "tests": {
+        "a8vk5j5192h": {
+          "key": "a8vk5j5192h",
+          "value": true
+        }
+      }
+    },
+    "a8vk5j8va04": {
+      "key": "a8vk5j8va04",
+      "value": true,
+      "tests": {
+        "a8vk5j8xado": {
+          "key": "a8vk5j8xado",
+          "value": true
+        }
+      }
+    },
+    "a8vk5j97nvx": {
+      "key": "a8vk5j97nvx",
+      "value": true,
+      "tests": {
+        "a8vk5j97nvy": {
+          "key": "a8vk5j97nvy",
+          "value": true
+        }
+      }
+    },
+    "a8vk5j9zj6x": {
+      "key": "a8vk5j9zj6x",
+      "value": true,
+      "tests": {
+        "a8vk5ja0f93": {
+          "key": "a8vk5ja0f93",
+          "value": true
+        }
+      }
+    },
+    "a8vk5ja66kp": {
+      "key": "a8vk5ja66kp",
+      "value": true,
+      "tests": {
+        "a8vk5ja789k": {
+          "key": "a8vk5ja789k",
+          "value": true
+        }
+      }
+    }
+  },
+  "savedAt": 1579384354,
+  "modified": false,
+  "lastOpenSuite": "add--delete--log--item.json",
+  "variables": {
+    "792k5k3pacg": {
+      "name": "BASE_URL",
+      "id": "792k5k3pacg",
+      "editing": false,
+      "value": "http://localhost:3000/",
+      "env": "test",
+      "key": "792k5k3pacg"
+    },
+    "792k5k3ufi6": {
+      "editing": false,
+      "id": "792k5k3ufi6",
+      "key": "792k5k3ufi6",
+      "name": "BASE_URL",
+      "value": "http://localhost:3000/",
+      "env": "stage",
+      "disabled": false,
+      "adding": false
+    },
+    "792k5k3ufjb": {
+      "editing": false,
+      "id": "792k5k3ufjb",
+      "key": "792k5k3ufjb",
+      "name": "BASE_URL",
+      "value": "http://localhost:3000/",
+      "env": "production",
+      "disabled": false,
+      "adding": false
+    },
+    "792k5k3ufm3": {
+      "name": "TEST_PASSWORD",
+      "id": "792k5k3ufm3",
+      "editing": false,
+      "value": "Auth02020!",
+      "hidden": true,
+      "env": "test",
+      "key": "792k5k3ufm3"
+    },
+    "792k5k3uxhg": {
+      "editing": false,
+      "id": "792k5k3uxhg",
+      "key": "792k5k3uxhg",
+      "name": "TEST_PASSWORD",
+      "value": "Auth02020!",
+      "env": "stage",
+      "disabled": false,
+      "adding": false,
+      "hidden": true
+    },
+    "792k5k3uxim": {
+      "editing": false,
+      "id": "792k5k3uxim",
+      "key": "792k5k3uxim",
+      "name": "TEST_PASSWORD",
+      "value": "Auth02020!",
+      "env": "production",
+      "disabled": false,
+      "adding": false,
+      "hidden": true
+    },
+    "792k5k4622r": {
+      "name": "TEST_USER_EMAIL",
+      "id": "792k5k4622r",
+      "editing": false,
+      "value": "andrew.d.wilkie@gmail.com",
+      "env": "test",
+      "key": "792k5k4622r"
+    },
+    "792k5k46n6g": {
+      "editing": false,
+      "id": "792k5k46n6g",
+      "key": "792k5k46n6g",
+      "name": "TEST_USER_EMAIL",
+      "value": "andrew.d.wilkie@gmail.com",
+      "env": "stage",
+      "disabled": false,
+      "adding": false
+    },
+    "792k5k46n7p": {
+      "editing": false,
+      "id": "792k5k46n7p",
+      "key": "792k5k46n7p",
+      "name": "TEST_USER_EMAIL",
+      "value": "andrew.d.wilkie@gmail.com",
+      "env": "production",
+      "disabled": false,
+      "adding": false
+    }
+  },
+  "targets": {},
+  "environments": [
+    "test",
+    "stage",
+    "production"
+  ],
+  "projectDirectory": "/home/andrew/dev/cloud-dev-capstone-project-motorcycle-log/client/puppetry_e2e_tests",
+  "puppetry": "3.1.1"
+}

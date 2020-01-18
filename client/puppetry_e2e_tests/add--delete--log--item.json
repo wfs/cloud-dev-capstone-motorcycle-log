@@ -1,0 +1,264 @@
+{
+  "title": "Add Delete Log Item",
+  "timeout": 50000,
+  "snippets": false,
+  "description": null,
+  "savedAt": 1579384354,
+  "loadedAt": 1579384041,
+  "modified": false,
+  "filename": "add--delete--log--item.json",
+  "targets": {
+    "a8vk5ja50if": {
+      "editing": false,
+      "id": "a8vk5ja50if",
+      "key": "a8vk5ja50if",
+      "target": "INPUT",
+      "selector": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/input[1]",
+      "disabled": false,
+      "adding": false,
+      "parentType": "",
+      "ref": ""
+    },
+    "a8vk5ja66n8": {
+      "editing": false,
+      "id": "a8vk5ja66n8",
+      "key": "a8vk5ja66n8",
+      "target": "I_CLASS_ADD_ICON",
+      "selector": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]/i[1]",
+      "disabled": false,
+      "adding": false,
+      "parentType": "",
+      "ref": ""
+    },
+    "a8vk5ja7tue": {
+      "editing": false,
+      "id": "a8vk5ja7tue",
+      "key": "a8vk5ja7tue",
+      "target": "I_CLASS_DELETE_ICON",
+      "selector": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[5]/button[1]/i[1]",
+      "disabled": false,
+      "adding": false,
+      "parentType": "",
+      "ref": ""
+    }
+  },
+  "groups": {
+    "a8vk5j8va04": {
+      "title": "user gets logged in",
+      "id": "a8vk5j8va04",
+      "editing": false,
+      "key": "a8vk5j8va04",
+      "tests": {
+        "a8vk5j8xado": {
+          "title": "log in",
+          "id": "a8vk5j8xado",
+          "editing": false,
+          "groupId": "a8vk5j8va04",
+          "key": "a8vk5j8xado",
+          "commands": {
+            "a8vk5j8ylld": {
+              "editing": false,
+              "id": "a8vk5j8ylld",
+              "key": "a8vk5j8ylld",
+              "target": "",
+              "method": "",
+              "assert": {},
+              "params": {},
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "Login",
+              "ref": "a8vk5j8m7qc",
+              "isRef": true,
+              "groupId": "a8vk5j8va04",
+              "testId": "a8vk5j8xado"
+            },
+            "a8vk5jaknvb": {
+              "editing": false,
+              "id": "a8vk5jaknvb",
+              "key": "a8vk5jaknvb",
+              "target": "page",
+              "method": "screenshot",
+              "params": {
+                "name": "Page 1",
+                "targets": [],
+                "fullPage": true,
+                "omitBackground": false,
+                "x": null,
+                "y": null,
+                "width": null,
+                "height": null
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "a8vk5j8va04",
+              "testId": "a8vk5j8xado",
+              "waitForTarget": false
+            }
+          }
+        }
+      }
+    },
+    "a8vk5j9zj6x": {
+      "title": "add log item",
+      "id": "a8vk5j9zj6x",
+      "editing": false,
+      "key": "a8vk5j9zj6x",
+      "tests": {
+        "a8vk5ja0f93": {
+          "title": "add log description",
+          "id": "a8vk5ja0f93",
+          "editing": false,
+          "groupId": "a8vk5j9zj6x",
+          "key": "a8vk5ja0f93",
+          "commands": {
+            "a8vk5ja50fv": {
+              "editing": false,
+              "id": "a8vk5ja50fv",
+              "key": "a8vk5ja50fv",
+              "target": "INPUT",
+              "method": "type",
+              "assert": {},
+              "params": {
+                "value": "Log item description"
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "a8vk5j9zj6x",
+              "testId": "a8vk5ja0f93",
+              "waitForTarget": true,
+              "entity": "command"
+            },
+            "a8vk5ja66jy": {
+              "editing": false,
+              "id": "a8vk5ja66jy",
+              "key": "a8vk5ja66jy",
+              "target": "I_CLASS_ADD_ICON",
+              "method": "click",
+              "assert": {},
+              "params": {
+                "button": "left"
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "a8vk5j9zj6x",
+              "testId": "a8vk5ja0f93",
+              "waitForTarget": true,
+              "entity": "command"
+            },
+            "a8vk5jal9fl": {
+              "editing": false,
+              "id": "a8vk5jal9fl",
+              "key": "a8vk5jal9fl",
+              "target": "INPUT",
+              "method": "screenshot",
+              "params": {
+                "name": "Element 1",
+                "targets": [
+                  "INPUT",
+                  "I_CLASS_ADD_ICON"
+                ],
+                "omitBackground": false
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "a8vk5j9zj6x",
+              "testId": "a8vk5ja0f93",
+              "waitForTarget": true
+            }
+          }
+        }
+      }
+    },
+    "a8vk5ja66kp": {
+      "title": "delete log item",
+      "id": "a8vk5ja66kp",
+      "editing": false,
+      "key": "a8vk5ja66kp",
+      "tests": {
+        "a8vk5ja789k": {
+          "title": "delete",
+          "id": "a8vk5ja789k",
+          "editing": false,
+          "groupId": "a8vk5ja66kp",
+          "key": "a8vk5ja789k",
+          "commands": {
+            "a8vk5ja7tqx": {
+              "editing": false,
+              "id": "a8vk5ja7tqx",
+              "key": "a8vk5ja7tqx",
+              "target": "I_CLASS_DELETE_ICON",
+              "method": "click",
+              "assert": {},
+              "params": {
+                "button": "left"
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "a8vk5ja66kp",
+              "testId": "a8vk5ja789k",
+              "waitForTarget": true,
+              "entity": "command"
+            },
+            "792k5k4mwe2": {
+              "editing": false,
+              "id": "792k5k4mwe2",
+              "key": "792k5k4mwe2",
+              "target": "page",
+              "method": "screenshot",
+              "params": {
+                "name": "Page 1",
+                "targets": [
+                  "I_CLASS_DELETE_ICON"
+                ],
+                "fullPage": true,
+                "omitBackground": false,
+                "x": null,
+                "y": null,
+                "width": null,
+                "height": null
+              },
+              "disabled": false,
+              "failure": "",
+              "variables": {},
+              "expanded": false,
+              "refName": "",
+              "ref": "",
+              "isRef": false,
+              "groupId": "a8vk5ja66kp",
+              "testId": "a8vk5ja789k",
+              "waitForTarget": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "puppetry": "3.1.1"
+}
