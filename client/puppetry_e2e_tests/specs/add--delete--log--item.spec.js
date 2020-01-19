@@ -42,7 +42,7 @@ bs.TARGETS[ "I_CLASS_DELETE_ICON" ] = async () => await bs.query( "/html[1]/body
 
 describe( "Add Delete Log Item", () => {
   beforeAll(async () => {
-    await bs.setup({"incognito":false,"ignoreHTTPSErrors":false,"headless":false,"launcherArgs":"--start-maximized --disable-extensions-except=null --load-extension=null --disable-extensions-except=/home/andrew/dev/cloud-dev-capstone-project-motorcycle-log/client/puppetry_e2e_tests --load-extension=/home/andrew/dev/cloud-dev-capstone-project-motorcycle-log/client/puppetry_e2e_tests","devtools":false});
+    await bs.setup({"incognito":false,"ignoreHTTPSErrors":false,"headless":false,"launcherArgs":"--start-maximized --disable-extensions-except=null --load-extension=null --disable-extensions-except=/home/andrew/dev/cloud-dev-capstone-motorcycle-log/client/puppetry_e2e_tests --load-extension=/home/andrew/dev/cloud-dev-capstone-motorcycle-log/client/puppetry_e2e_tests","devtools":false});
 
     bs.page.on( "console", ( message ) => consoleLog.push( message ) );
     bs.page.on( "dialog", ( dialog ) => dialogLog.push( dialog ) );

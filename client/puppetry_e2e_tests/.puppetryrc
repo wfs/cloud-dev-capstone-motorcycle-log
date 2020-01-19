@@ -170,6 +170,6 @@
     "stage",
     "production"
   ],
-  "projectDirectory": "/home/andrew/dev/cloud-dev-capstone-project-motorcycle-log/client/puppetry_e2e_tests",
+  "projectDirectory": "/home/andrew/dev/cloud-dev-capstone-motorcycle-log/client/puppetry_e2e_tests",
   "puppetry": "3.1.1"
 }
