@@ -46,6 +46,10 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
     this.props.history.push(`/todos/${todoId}/edit`);
   };
 
+  /**
+   * Events on todo create
+   * @param event
+   */
   onTodoCreate = async (event: React.ChangeEvent<HTMLButtonElement>) => {
     try {
       const dueDate = this.calculateDueDate();
@@ -140,6 +144,10 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
     );
   }
 
+  /**
+   * Renders todos
+   * @returns
+   */
   renderTodos() {
     if (this.state.loadingTodos) {
       return this.renderLoading();
@@ -148,6 +156,10 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
     return this.renderTodosList();
   }
 
+  /**
+   * Renders loading
+   * @returns
+   */
   renderLoading() {
     return (
       <Grid.Row>
@@ -158,6 +170,10 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
     );
   }
 
+  /**
+   * Renders todos list
+   * @returns
+   */
   renderTodosList() {
     return (
       <Grid padded>
@@ -195,7 +211,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
                 </Button>
               </Grid.Column>
               {/* Hide empty image */}
-              <Img src={todo.attachmentUrl} />
+              <Img src={todo.attachmentUrl} crossorigin="anonymous" />
               <Grid.Column width={16}>
                 <Divider />
               </Grid.Column>
@@ -216,7 +232,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
 
   calculateDueDate(): string {
     const date = new Date();
-    date.setDate(date.getDate() + 7);
+    date.setDate(date.getDate());
 
     return dateFormat(date, "yyyy-mm-dd") as string;
   }

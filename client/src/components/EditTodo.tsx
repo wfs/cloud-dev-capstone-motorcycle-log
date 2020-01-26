@@ -3,6 +3,8 @@ import { Form, Button } from "semantic-ui-react";
 import Auth from "../auth/Auth";
 import { getUploadUrl, uploadFile } from "../api/todos-api";
 
+// import Resizer from "react-image-file-resizer";
+
 enum UploadState {
   /**
    * Set of named String constants providing State.
@@ -65,6 +67,20 @@ export class EditTodo extends React.PureComponent<
       );
 
       this.setUploadState(UploadState.UploadingFile);
+      // TODO: resize image file
+      // ...
+      // Resizer.imageFileResizer(
+      //   this.state.file,
+      //   300,
+      //   300,
+      //   "JPEG",
+      //   100,
+      //   0,
+      //   uri => {
+      //     console.log(uri);
+      //   }
+      // );
+
       await uploadFile(uploadUrl, this.state.file);
 
       alert("File was uploaded!");
