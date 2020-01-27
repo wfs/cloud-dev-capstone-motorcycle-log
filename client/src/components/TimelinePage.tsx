@@ -88,12 +88,14 @@ export class TimelinePage extends React.PureComponent<TodosProps, TodosState> {
                   }
                 >
                   {/* {<Img src={todo.attachmentUrl} crossorigin="anonymous" />} */}
-                  <Image
-                    src={todo.attachmentUrl}
-                    width={160}
-                    height={240}
-                    mode="fit"
-                  />
+                  <a href={todo.attachmentUrl}>
+                    <Image
+                      src={todo.attachmentUrl}
+                      width={160}
+                      height={240}
+                      mode="fit"
+                    />
+                  </a>
                 </TimelineEvent>
               </Grid.Row>
             );

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link, Route, Router, Switch } from "react-router-dom";
-import { Grid, Menu, Segment } from "semantic-ui-react";
+import { Grid, Image, Menu, Segment } from "semantic-ui-react";
 
 import Auth from "./auth/Auth";
 import { EditTodo } from "./components/EditTodo";
@@ -8,6 +8,10 @@ import { LogIn } from "./components/LogIn";
 import { NotFound } from "./components/NotFound";
 import { Todos } from "./components/Todos";
 import { TimelinePage } from "./components/TimelinePage";
+
+import banner from "./images/motorcycle-log-small-banner.png";
+
+// const Img = require("react-image");
 
 export interface AppProps {}
 
@@ -37,10 +41,11 @@ export default class App extends Component<AppProps, AppState> {
   render() {
     return (
       <div>
-        <Segment style={{ padding: "8em 0em" }} vertical>
+        <Segment style={{ padding: "1em 0em" }} vertical>
           <Grid container stackable verticalAlign="middle">
             <Grid.Row>
               <Grid.Column width={16}>
+                <Image src={banner} fluid />
                 <Router history={this.props.history}>
                   {this.generateMenu()}
 

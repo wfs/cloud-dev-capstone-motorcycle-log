@@ -2,17 +2,7 @@ import dateFormat from "dateformat";
 import { History } from "history";
 import update from "immutability-helper";
 import * as React from "react";
-import {
-  Button,
-  Checkbox,
-  Divider,
-  Grid,
-  Header,
-  Icon,
-  Input,
-  Image,
-  Loader
-} from "semantic-ui-react";
+import { Button, Divider, Grid, Icon, Input, Loader } from "semantic-ui-react";
 
 const Img = require("react-image");
 
@@ -62,7 +52,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
         newTodoName: ""
       });
     } catch {
-      alert("Todo creation failed");
+      alert("Log creation failed");
     }
   };
 
@@ -73,7 +63,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
         todos: this.state.todos.filter(todo => todo.todoId != todoId)
       });
     } catch {
-      alert("Todo deletion failed");
+      alert("Log deletion failed");
     }
   };
 
@@ -91,7 +81,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
         })
       });
     } catch {
-      alert("Todo deletion failed");
+      alert("Log checkbox set failed");
     }
   };
 
@@ -110,8 +100,6 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
   render() {
     return (
       <div>
-        <Header as="h1">TODOs</Header>
-
         {this.renderCreateTodoInput()}
 
         {this.renderTodos()}
@@ -125,15 +113,13 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
         <Grid.Column width={16}>
           <Input
             action={{
-              color: "teal",
-              labelPosition: "left",
+              color: "green",
               icon: "add",
-              content: "New task",
               onClick: this.onTodoCreate
             }}
             fluid
             actionPosition="left"
-            placeholder="To change the world..."
+            placeholder="12K service, New battery, Rear rack ..."
             onChange={this.handleNameChange}
           />
         </Grid.Column>
@@ -164,7 +150,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
     return (
       <Grid.Row>
         <Loader indeterminate active inline="centered">
-          Loading TODOs
+          Loading motorcycle log ...
         </Loader>
       </Grid.Row>
     );
@@ -176,20 +162,14 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
    */
   renderTodosList() {
     return (
-      <Grid padded>
+      <Grid stackable columns={6}>
         {this.state.todos.map((todo, pos) => {
           return (
             <Grid.Row key={todo.todoId}>
-              <Grid.Column width={1} verticalAlign="middle">
-                <Checkbox
-                  onChange={() => this.onTodoCheck(pos)}
-                  checked={todo.done}
-                />
-              </Grid.Column>
               <Grid.Column width={10} verticalAlign="middle">
-                {todo.name}
+                <a href={todo.attachmentUrl}>{todo.name}</a>
               </Grid.Column>
-              <Grid.Column width={3} floated="right">
+              <Grid.Column width={3} verticalAlign="middle" floated="right">
                 {todo.dueDate}
               </Grid.Column>
               <Grid.Column width={1} floated="right">
@@ -198,7 +178,7 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
                   color="blue"
                   onClick={() => this.onEditButtonClick(todo.todoId)}
                 >
-                  <Icon name="pencil" />
+                  <Icon name="cloud upload" />
                 </Button>
               </Grid.Column>
               <Grid.Column width={1} floated="right">
@@ -210,8 +190,6 @@ export class Todos extends React.PureComponent<TodosProps, TodosState> {
                   <Icon name="delete" />
                 </Button>
               </Grid.Column>
-              {/* Hide empty image */}
-              <Img src={todo.attachmentUrl} crossorigin="anonymous" />
               <Grid.Column width={16}>
                 <Divider />
               </Grid.Column>
