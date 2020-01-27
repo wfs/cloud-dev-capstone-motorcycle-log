@@ -16,5 +16,6 @@
     ![Alt text](images/desktop_landscape_view.png)
     ![Alt text](images/phone_portrait_view.png)
 5. Add Timeline page to enable vertical view of Motorcycle Log entries showing small image of uploaded documents e.g. itemised receipts, etc.
-    ![Alt text](images/motorcycle_log_timeline_images_view.png)
+    1. ![Alt text](images/motorcycle_log_timeline_images_view.png)
+
 
