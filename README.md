@@ -15,7 +15,7 @@
 4. Adjust design to be responsive, with preference for mobile viewing.
     ![Alt text](images/desktop_landscape_view.png)
     ![Alt text](images/phone_portrait_view.png)
-5. Add Timeline page to enable vertical view of Motorcycle Log entries showing small image of uploaded documents e.g. itemised receipts, etc.
+5. Add Timeline page to enable vertical view of Motorcycle Log entries showing small image of uploaded documents e.g. itemised receipts, etc. The image is an anchor to the original file uploaded to S3. This allows the user to view / download the original full sized document.
     1. ![Alt text](images/motorcycle_log_timeline_images_view.png)
 
 
