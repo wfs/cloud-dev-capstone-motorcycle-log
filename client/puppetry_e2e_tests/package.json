@@ -14,12 +14,8 @@
   "license": "ISC",
   "jest": {
     "verbose": true,
-    "extraGlobals": [
-      "Math"
-    ],
-    "setupFilesAfterEnv": [
-      "./lib/fix-return-warning.js"
-    ],
+    "extraGlobals": [ "Math" ],
+    "setupFilesAfterEnv": [ "./lib/fix-return-warning.js" ],
     "testMatch": [
       "**/*.spec.js"
     ]

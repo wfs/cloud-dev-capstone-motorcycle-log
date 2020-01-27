@@ -70,11 +70,31 @@
           "value": true
         }
       }
+    },
+    "lfok5vzyaw6": {
+      "key": "lfok5vzyaw6",
+      "value": true,
+      "tests": {
+        "lfok5vzyaw7": {
+          "key": "lfok5vzyaw7",
+          "value": true
+        }
+      }
+    },
+    "7dkk5w1i0c7": {
+      "key": "7dkk5w1i0c7",
+      "value": true,
+      "tests": {
+        "7dkk5w1i0c8": {
+          "key": "7dkk5w1i0c8",
+          "value": true
+        }
+      }
     }
   },
-  "savedAt": 1579920054,
+  "savedAt": 1580105056,
   "modified": false,
-  "lastOpenSuite": "add--delete--log--item.json",
+  "lastOpenSuite": "add-log-upload-file-view-timeline-delete-log.json",
   "variables": {
     "792k5k3pacg": {
       "name": "BASE_URL",
@@ -107,7 +127,7 @@
     "792k5k3ufm3": {
       "name": "TEST_PASSWORD",
       "id": "792k5k3ufm3",
-      "editing": false,
+      "editing": true,
       "value": "Auth02020!",
       "hidden": true,
       "env": "test",
